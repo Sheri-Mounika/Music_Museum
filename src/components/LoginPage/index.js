@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import backgroundImage from '../../Images/background-image.jpg';
 import './index.css'
 
 function LoginPage() {
@@ -19,7 +20,12 @@ function LoginPage() {
   };
 
   return (
-    <div className='bg-container'>
+    <div  style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      height: '100vh',
+      textAlign: 'center',
+  }} className='bg-container'>
       <div className='in-container'>
       <h1 className='heading'>Music Museum</h1>
       <input
