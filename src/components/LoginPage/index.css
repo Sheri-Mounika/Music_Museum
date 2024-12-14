@@ -40,7 +40,7 @@ input::placeholder{
     border:2px solid rgb(19, 139, 231);
     outline: none;
     background-color:rgb(19, 139, 231) ;
-    width: 30%;
+    width:  30%;
     height:50px;
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
@@ -48,3 +48,56 @@ input::placeholder{
     color: white;
 
 }
+@media (max-width: 768px) {
+    .heading{
+        color:rgb(19, 139, 231);
+        font-family: Georgia;
+    }
+    .in-container{
+        text-align: center;
+        
+        width:50%;
+        position: absolute;
+        left: 100px;
+        top:100px;
+        padding: 10px;
+        border:5px rgb(19, 139, 231) dashed;
+        animation: borderPulse 2s infinite;
+    }
+    
+    @keyframes borderPulse{
+        0%, 100%{
+            border-width: 3px;
+            border-color:rgb(19, 139, 231);
+        }
+        20%{
+            border-width: 6px;
+            border-color:rgb(19, 139, 231);
+        }
+    }
+    input{
+        
+        border:2px solid rgb(19, 139, 231) ;
+        outline: none;
+        width: 50%;
+        height:25px;
+    
+    }
+    input::placeholder{
+        color:rgb(19, 139, 231);
+    }
+    .button-style{
+        border:2px solid rgb(19, 139, 231);
+        outline: none;
+        background-color:rgb(19, 139, 231) ;
+        width: 40%;
+        height:50px;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+        color: white;
+    
+    }
+    
+  }
+  
